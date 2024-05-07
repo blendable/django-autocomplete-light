@@ -80,7 +80,7 @@ class Select2WidgetMixin(object):
     @property
     def media(self):
         """Return JS/CSS resources for the widget."""
-        extra = '' if settings.DEBUG else '.min'
+        extra = ''
         i18n_name = self._get_language_code()
         i18n_file = (
             '%s%s.js' % (I18N_PATH, i18n_name),
